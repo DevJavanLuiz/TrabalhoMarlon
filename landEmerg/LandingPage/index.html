@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Landing Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./assets/css/landingpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu">
+        <div class="menu-content main-content">
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#home"><img class="img-logo"
+                        src="./assets/img/undraw_cabin_hkfr.svg" alt="casa em cima de uma montanha"></a></h1>
+
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#top3">Tops</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div id="home" class="margin-top"></div>
+
+
+
+    <section class="main-bg section">
+
+        <button id="mudar" onclick="mudar()">Mudar</button>
+
+        <div class="main-content intro-content" id="inicio">
+            <div class="intro-text-content">
+                <h1>Deviciados</h1>
+                <p>Grupo infinity code, é um grupo de devs junior empenhado em melhorar e adquirir conhecimentos.</p>
+            </div>
+            <div class="intro-img">
+                <img src="./assets/img/uninassau_share.png" alt="casa em cima de uma montanha">
+            </div>
+        </div>
+    </section>
+
+    <section id="top3" class=" white-bg section grid-one">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">TOP 03 PROJETOS</h2>
+            <p class="grid-description"> Aqui estão alguns projetos.</p>
+
+            <div class="grid">
+                <article>
+
+                    <h3><a href="#">S.O.S PET</a></h3>
+                    <p>Projeto voltado para aumentar a visibilidade da instituição S.O.S PET.</p>
+
+                </article>
+
+                <article>
+
+                    <h3><a href="#">CALCULADORA IMC</a></h3>
+                    <p>Projeto para realizar o calculo do IMC.</p>
+
+                </article>
+
+                <article>
+
+                    <h3><a href="#">CADASTRO INSTITUIÇÃO</a></h3>
+                    <p>Site apropriado para cadastrar ong's e ultilizar para apresentação das mesmas.
+                    </p>
+
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class=" mudar main-bg section grid-one">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Galeria Grupo</h2>
+            <p class="grid-description">Integrantes 2MB</p>
+
+            <div class="grid imgs">
+
+                <article>
+                    <img src="assets/img/IMG-20231207-WA0008.jpg" alt="randon">
+                    <p>Javan Luiz | 20 anos<br>01612581</p>
+                </article>
+
+                <article>
+                    <img src="./assets/img/IMG-20231207-WA0009.jpg" alt="randon">
+                    <p>Marcos Cauã | 20 anos<br>01600431</p>
+                </article>
+
+                <article>
+                    <img src="./assets/img/IMG-20231207-WA0010.jpg" alt="randon">
+                    <p>João Guilherme | 19 anos<br>01609998</p>
+                </article>
+                <article>
+                    <img src="./assets/img/IMG-20231207-WA0011.jpg" alt="randon">
+                    <p>Davi Henrique | 18 anos<br>01627087</p>
+                </article>
+
+                <article>
+                    <img src="./assets/img/IMG-20231207-WA0012.jpg" alt="randon">
+                    <p>Ruan Henrique | 19 anos<br>01647567</p>
+                </article>
+
+                <article>
+                    <img src="./assets/img/IMG-20231207-WA0014.jpg" alt="randon">
+                    <p>José Caio | 19 anos<br>01612363</p>
+                </article>
+
+                <article>
+                    <img src="./assets/img/IMG-20231207-WA0016.jpg" alt="randon">
+                    <p>Allison Batista | 22 anos<br>01643868</p>
+                </article>
+
+                <article>
+                    <img src="./assets/img/IMG-20231207-WA0017.jpg" alt="randon">
+                    <p>Rayssa Bezerra | 18 anos<br>01601869</p>
+                </article>
+
+                <article>
+                    <img src="./assets/img/Screenshot_20231207_101319_WhatsApp.jpg" alt="randon">
+                    <p>Thiago Gomes | 22 anos<br>01606926</p>
+                </article>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="white-bg section">
+        <div class="main-content form">
+
+            <h1>FALE CONOSCO</h1>
+
+            <form>
+                <label for="name">
+                    Nome:
+                </label>
+                <input id="name" type="name" placeholder="Your name..." required>
+
+                <label for="name1">
+                    Sobrenome:
+                </label>
+                <input id="name1" type="name" placeholder="Your last name..." required>
+
+                <label for="email">
+                    E-Mail:
+                </label>
+                <input id="email" type="email" placeholder="Your email..." required>
+
+                <label for="text">
+                    Digite sua mensagem:
+                </label>
+                <textarea name="textarea" id="text" cols="30" rows="10" required></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </div>
+    </section>
+    <section class="main-bg  mudar section-icon tfoot">
+        <div class="menu-content icons">
+            <img src="./assets/img/facebook.png" alt="icone do facebook cor preta">
+            <img src="./assets/img/github.png" alt="icone github">
+            <img src="./assets/img/instagram.png" alt="icone instagram">
+            <img src="./assets/img/linkedin.png" alt="icone linkedin">
+            <img src="./assets/img/whatsapp.png" alt="icone whatsapp">
+        </div>
+    </section>
+    <a class="back-to-top" href="#">➤</a>
+
+</body>
+
+</html>
